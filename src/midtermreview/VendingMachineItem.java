@@ -16,7 +16,9 @@ import java.util.Scanner;
  */
 public class VendingMachineItem 
 {
-    public double price;
+    
+    
+    PriceList price;
     public static String [] candies = {"chocolate bar", "sour candy", "soft drink", "potato chips"};
     public VendingMachineItem()
     {
@@ -27,7 +29,7 @@ public class VendingMachineItem
      * A getter method to return the item's price
      * @return the cost of the item
      */
-    public double getPrice()
+    public PriceList getPrice()
     {
         return price;
     }
@@ -36,7 +38,7 @@ public class VendingMachineItem
      * A setter for the price, allowing us to change the price of an item
      * @param givenPrice 
      */
-    public void setPrice(double givenPrice)
+    public void setPrice(PriceList givenPrice)
     {
         price = givenPrice;
     }
